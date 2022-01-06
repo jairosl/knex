@@ -1,16 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { AdvantagesAndArguments } from '../Components/AdvantagesAndArguments';
-
-const H1 = styled.h1`
-    color: red;
-`;
+import Main from '../components/Home';
+import Services from '../components/Services';
+import AdvantagesAndArguments from '../components/AdvantagesAndArguments';
 
 export default function Home() {
     return (
         <>
-            <H1>Next.js + Styled Component</H1>
+            <Main />
+            <Services />
             <AdvantagesAndArguments />
         </>
     );

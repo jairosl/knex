@@ -1,5 +1,7 @@
 import React from 'react';
 
-export function AdvantagesAndArguments() {
+function AdvantagesAndArguments() {
     return <h1>Advantages And Arguments</h1>;
 }
+
+export default AdvantagesAndArguments;
