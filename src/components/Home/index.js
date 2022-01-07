@@ -13,24 +13,26 @@ export default function Home() {
                 </p>
 
                 <Button>Conheça nossos serviços</Button>
-                <Button color>Faça Seu Orçamento</Button>
+                <Button color green>
+                    Faça Seu Orçamento
+                </Button>
                 <span>Acompanhe-nos nas redes sociais!</span>
-                <Image src="/assets/images/iconInstagram.svg" width={34} height={34} />
-                <span>@Knex</span>
-                <Image src="/assets/images/iconLinkedin.svg" width={34} height={34} />
-                <span>linkedin/knex</span>
-                <Image src="/assets/images/iconFacebook.svg" width={34} height={34} />
-                <span>facebook.com/knex</span>
+                <div>
+                    <Image src="/assets/images/iconInstagram.svg" width={34} height={34} />
+                    <span>@Knex</span>
+                    <Image src="/assets/images/iconLinkedin.svg" width={34} height={34} />
+                    <span>linkedin/knex</span>
+                    <Image src="/assets/images/iconFacebook.svg" width={34} height={34} />
+                    <span>facebook.com/knex</span>
+                </div>
             </Content>
             <Container>
-                <div>
-                    <Image
-                        src="/assets/images/femaleWorking.svg"
-                        alt="avatar"
-                        width={863}
-                        height={644}
-                    />
-                </div>
+                <Image
+                    src="/assets/images/femaleWorking.svg"
+                    alt="avatar"
+                    width={863}
+                    height={644}
+                />
             </Container>
         </Wrapper>
     );

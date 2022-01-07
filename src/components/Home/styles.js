@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    padding: 0 10rem;
+    max-width: 100%;
     height: 100vh;
+    padding: 0 10rem;
     display: flex;
     background: var(--black);
     gap: 4rem;
@@ -11,12 +12,25 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-    width: 36rem;
+    width: 576px;
     p,
     span {
+        margin: 0.4rem 0;
         font-size: 1.125rem;
         line-height: 30px;
         color: var(--white);
+    }
+
+    div {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 0 0.4rem;
+        }
     }
 `;
 
@@ -38,11 +52,13 @@ export const Title = styled.h2`
 
 export const Button = styled.button`
     background-color: ${(props) => (props.color ? 'var(--black)' : '#8bffa2')};
-    padding: 0.8rem;
+    color: ${(props) => (props.green ? '#8bffa2' : '#000')};
     border-radius: 1.6rem;
     border: none;
+    padding: 0.8rem;
     margin-top: 2rem;
     margin-right: 0.2rem;
+    margin-bottom: 3.5rem;
     font-size: 1rem;
     font-weight: 600;
 `;
