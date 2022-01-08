@@ -1,45 +1,43 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    max-width: 100%;
+    width: 100%;
     height: 100vh;
-    padding: 0 10rem;
     display: flex;
     background: var(--black);
-    gap: 4rem;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 `;
 
 export const Content = styled.div`
-    width: 576px;
+    width: 550px;
+    padding: 0 1rem;
     p,
     span {
-        margin: 0.4rem 0;
+        display: inline-block;
         font-size: 1.125rem;
         line-height: 30px;
         color: var(--white);
     }
+    p {
+        margin-bottom: 3rem;
+    }
+    > span {
+        margin: 3rem 0 0.4rem 0;
+    }
 
     div {
-        margin-top: 1rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        gap: 0.5rem;
         span {
             font-weight: 700;
             font-size: 1rem;
-            margin: 0 0.4rem;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
-`;
-
-export const Container = styled.div`
-    width: 800px;
-    height: 644px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `;
 
 export const Title = styled.h2`
@@ -51,14 +49,14 @@ export const Title = styled.h2`
 `;
 
 export const Button = styled.button`
-    background-color: ${(props) => (props.color ? 'var(--black)' : '#8bffa2')};
-    color: ${(props) => (props.green ? '#8bffa2' : '#000')};
+    background-color: ${(props) => (props.bg ? '#8bffa2' : 'var(--black)')};
+    color: ${(props) => (props.colorGreen ? '#8bffa2' : '#000')};
     border-radius: 1.6rem;
     border: none;
     padding: 0.8rem;
-    margin-top: 2rem;
-    margin-right: 0.2rem;
-    margin-bottom: 3.5rem;
-    font-size: 1rem;
+    margin-right: 0.5rem;
     font-weight: 600;
+    &:hover {
+        text-decoration: underline;
+    }
 `;
