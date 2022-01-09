@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 import Header from '../Header';
 
 import { Wrapper, Content, Title, Button } from './styles.js';

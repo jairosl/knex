@@ -51,9 +51,15 @@ export const ArrowButton = styled.button`
     background: transparent;
     color: var(--black);
 
-    svg {
+    img {
         width: 49px;
         height: 74px;
+    }
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(1.5);
     }
 
     &:disabled {
