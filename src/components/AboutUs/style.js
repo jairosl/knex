@@ -8,9 +8,7 @@ export const Container = styled.div`
     font-weight: 600;
     font-size: .9em;
 `
-export const LeftCol = styled.div`
-    
-`
+
 export const MainText = styled.div`
     width: 700px ;
     p{
@@ -38,4 +36,4 @@ export const SubText = styled.div`
     }
     
 `
-export const RightCol = styled.div``
+
