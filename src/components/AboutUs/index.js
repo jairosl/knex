@@ -9,8 +9,7 @@ const AboutUS = () => {
                 <MainText>
                 <h1>Quem somos nós?</h1>
                 <p>
-                Somos uma empresa formada por estudantes dedicados com experiencia no mercado de trabalho e que vai ter retornar o melhor projeto
-                para sua empresa.
+                Somos uma empresa formada por estudantes dedicados com experiência no mercado de trabalho e que vai te retornar o melhor projeto para a sua empresa.
                 </p>
                 </MainText> 
                 <br></br> 
@@ -23,8 +22,7 @@ const AboutUS = () => {
                         height={60}
                     />
                     <h3>Alta Qualidade</h3>
-                    <p>Temos um rigoroso processo seletivo que seleciona os melhores estudantes da univeridade, que tambem recebem 
-                    treinamentos intersivos e palestar contates para aprimorarem ainda mais os seus conhecimentos.</p>
+                    <p>Temos um rigoroso processo seletivo que seleciona os melhores estudantes da universidade, que também recebem treinamentos intensivos e palestras contantes para aprimorarem ainda mais os seus conhecimentos.</p>
                 </div>
                 <div>
                     <Image
@@ -33,8 +31,8 @@ const AboutUS = () => {
                         width={60}
                         height={60}
                     />
-                    <h3>Custo beneficio</h3>
-                    <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 50% mais barato que o mercado. Bem legal, não é?</p>
+                    <h3>Custo benefício</h3>
+                    <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 60% mais barato que o mercado. Bem legal, não é?</p>
                 </div>
                 </SubText>  
             </LeftCol>
