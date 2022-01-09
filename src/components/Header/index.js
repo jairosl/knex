@@ -26,7 +26,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" passHref>
+                    <Link href="#about" passHref>
                         <StyledLink>Quem somos?</StyledLink>
                     </Link>
                 </div>
