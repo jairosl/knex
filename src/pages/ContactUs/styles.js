@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FormBody = styled.section`
+export const FormBody = styled.form`
   width: 100vw;
   padding-top: 80px;
   display: flex;
@@ -47,7 +47,22 @@ export const TextArea = styled.textarea`
   background-color: rgba(167, 192, 255, 0.17);
   border-radius: 8px;
   border: none;
-
   outline: none;
-  
+`
+
+export const Button = styled.button`
+  width: 200px;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--light-purple);
+  border: 1px solid var(--light-purple);
+  transition: 0.2s;
+  height: 40px;
+
+  &:hover {
+    transition: 0.2s;
+    color: var(--light-purple);
+    background-color: transparent;
+    border: 1px solid var(--light-purple);
+  }
 `

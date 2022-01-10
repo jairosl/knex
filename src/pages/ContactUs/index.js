@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
-import { FormBody, FormSection, Input, TextArea } from './styles';
+import { FormBody, FormSection, Input, TextArea, Button } from './styles';
 
 function ContactUs() {
   return (
@@ -19,6 +19,9 @@ function ContactUs() {
             <Input placeholder='Celular' type="tel" />
           </FormSection>
           <TextArea placeholder='Deixe uma mensagem'  />
+          <div style={{display: "flex", justifyContent: "center"}}>
+            <Button>Enviar</Button>
+          </div>
         </div>
       </FormBody>
     </>
