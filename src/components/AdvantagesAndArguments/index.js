@@ -62,7 +62,7 @@ function AdvantagesAndArguments() {
     }
 
     return (
-        <AdvantagesAndArgumentsContainer>
+        <AdvantagesAndArgumentsContainer id="advantages">
             <AdvantagesAndArgumentsContent>
                 <TextBox>
                     <Title>Ajudamos você a alcançar os objetivos e metas da sua empresa</Title>
