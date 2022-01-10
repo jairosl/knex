@@ -13,15 +13,22 @@ export const AdvantagesAndArgumentsContent = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 
     color: var(--black);
+
+    .rec-carousel {
+        margin-top: 4rem;
+    }
 `;
 
 export const TextBox = styled.div`
     width: 1279px;
     margin: 0 auto;
-    padding: 0 1rem;
+
+    @media (max-width: 1279px) {
+        max-width: 1279px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -30,6 +37,7 @@ export const Title = styled.h1`
     font-weight: 600;
 
     max-width: 850px;
+    margin: 0;
 `;
 
 export const Text = styled.p`
@@ -39,8 +47,8 @@ export const Text = styled.p`
     color: var(--gray);
 
     max-width: 730px;
-
-    margin-top: 2rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0;
 `;
 
 export const ArrowButton = styled.button`

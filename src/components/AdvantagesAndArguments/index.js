@@ -75,7 +75,7 @@ function AdvantagesAndArguments() {
                 <Carousel
                     breakPoints={carouselBreakPoints}
                     pagination={false}
-                    itemPadding={[0, 30]}
+                    itemPadding={[0, 28]}
                     renderArrow={({ type, onClick, isEdge }) =>
                         type === 'PREV'
                             ? customCarouselArrow(onClick, isEdge)
