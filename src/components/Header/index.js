@@ -11,7 +11,7 @@ export default function Header() {
             </Logo>
             <NavContainer>
                 <div>
-                    <Link href="/" passHref>
+                    <Link href="/#home" passHref>
                         <StyledLink>Início</StyledLink>
                     </Link>
                 </div>

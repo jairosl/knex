@@ -11,7 +11,7 @@ export default function Home() {
             <Main />
             <Services />
             <AdvantagesAndArguments />
-            <AboutUS/>
+            <AboutUS />
         </>
     );
 }
