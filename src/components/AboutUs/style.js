@@ -24,6 +24,10 @@ export const SubText = styled.div`
     width: 800px;
     display: flex;
 
+    div:first-child {
+        margin-right: 1rem;
+    }
+
     p {
         color: #5b5b5b;
         width: 340px;
