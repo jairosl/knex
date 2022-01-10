@@ -42,8 +42,7 @@ export default function Header() {
                 </div>
                 <Button>
                     <Link href="/ContactUs" >Faça seu orçamento!</Link>
-                    
-                    </Button>
+                </Button>
             </NavContainer>
         </Nav>
     );
