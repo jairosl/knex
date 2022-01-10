@@ -16,57 +16,51 @@ import {
 const carouselBreakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 820, itemsToShow: 2 },
-    { width: 1230, itemsToShow: 3 }
+    { width: 1279, itemsToShow: 3 }
 ];
 //só pra simular o map
 const data = [
     {
         id: 1,
-        imageUrl: '/assets/images/manAndWoman.png',
+        imageUrl: '/assets/images/manAndWoman.webp',
         title: 'Fortaleça sua marca',
         text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
     },
     {
         id: 2,
-        imageUrl: '/assets/images/manAndWoman.png',
+        imageUrl: '/assets/images/manAndWoman.webp',
         title: 'Fortaleça sua marca',
         text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
     },
     {
         id: 3,
-        imageUrl: '/assets/images/manAndWoman.png',
+        imageUrl: '/assets/images/manAndWoman.webp',
         title: 'Fortaleça sua marca',
         text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
     },
     {
         id: 4,
-        imageUrl: '/assets/images/manAndWoman.png',
+        imageUrl: '/assets/images/manAndWoman.webp',
         title: 'Fortaleça sua marca',
         text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
     },
     {
         id: 5,
-        imageUrl: '/assets/images/manAndWoman.png',
+        imageUrl: '/assets/images/manAndWoman.webp',
         title: 'Fortaleça sua marca',
         text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
     }
 ];
 
 function AdvantagesAndArguments() {
-    function customCarouselLeftArrow(onClick, isEdge) {
+    function customCarouselArrow(onClick, isEdge, isRight) {
         return (
-            <ArrowButton onClick={onClick} disabled={isEdge}>
+            <ArrowButton onClick={onClick} disabled={isEdge} isRight={isRight}>
                 <Image src="/assets/images/leftArrowIcon.svg" alt="<" height={79} width={49} />
             </ArrowButton>
         );
     }
-    function customCarouselRightArrow(onClick, isEdge) {
-        return (
-            <ArrowButton onClick={onClick} disabled={isEdge}>
-                <Image src="/assets/images/rightArrowIcon.svg" alt="<" height={79} width={49} />
-            </ArrowButton>
-        );
-    }
+
     return (
         <AdvantagesAndArgumentsContainer>
             <AdvantagesAndArgumentsContent>
@@ -81,11 +75,11 @@ function AdvantagesAndArguments() {
                 <Carousel
                     breakPoints={carouselBreakPoints}
                     pagination={false}
-                    itemPadding={[0, 10]}
+                    itemPadding={[0, 30]}
                     renderArrow={({ type, onClick, isEdge }) =>
                         type === 'PREV'
-                            ? customCarouselLeftArrow(onClick, isEdge)
-                            : customCarouselRightArrow(onClick, isEdge)
+                            ? customCarouselArrow(onClick, isEdge)
+                            : customCarouselArrow(onClick, isEdge, true)
                     }
                 >
                     {data.map((element) => (
