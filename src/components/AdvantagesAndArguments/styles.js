@@ -9,7 +9,7 @@ export const AdvantagesAndArgumentsContent = styled.div`
     max-width: 1504px;
     min-height: 930px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@ export const TextBox = styled.div`
     margin: 0 auto;
 
     @media (max-width: 1279px) {
+        width: auto;
         max-width: 1279px;
     }
 `;
