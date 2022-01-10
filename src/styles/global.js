@@ -1,9 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+  body::-webkit-scrollbar {
+      width: 12px;               /* width of the entire scrollbar */
+    }
+
+  body::-webkit-scrollbar-track {
+    background: #1D1E2C;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #1D1E2C;  /* creates padding around scroll thumb */
+  }
   html {
     scroll-behavior: smooth;
   }
+  
   body {
     margin: 0;
     padding: 0;
