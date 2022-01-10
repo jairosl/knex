@@ -14,17 +14,14 @@ export const AdvantagesAndArgumentsContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 
     color: var(--black);
 `;
 
 export const TextBox = styled.div`
-    min-width: 1279px;
-
-    @media (max-width: 720px) {
-        margin-left: 1rem;
-    }
+    width: 1279px;
+    margin: 0 auto;
+    padding: 0 1rem;
 `;
 
 export const Title = styled.h1`
