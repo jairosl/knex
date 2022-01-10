@@ -11,6 +11,10 @@ export const Container = styled.div`
 
 export const MainText = styled.div`
     width: 700px;
+    h1 {
+        font-size: 48px;
+        margin: 0;
+    }
     p {
         color: #5b5b5b;
         width: 400px;

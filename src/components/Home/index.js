@@ -3,14 +3,20 @@ import Link from 'next/link';
 import React from 'react';
 
 import Header from '../Header';
+import Head from 'next/head';
 
 import { Wrapper, Content, Title, Button } from './styles.js';
 
 export default function Home() {
     return (
         <>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <title>Knex</title>
+            </Head>
+
             <Header />
-            <Wrapper>
+            <Wrapper id="home">
                 <Content>
                     <Title>Atualize seu negócio</Title>
                     <p>
@@ -18,7 +24,9 @@ export default function Home() {
                         alavancar de vendas e ainda com baixo preço!
                     </p>
 
-                    <Button bg>Conheça Nossos Serviços</Button>
+                    <Button bg greenBorder fontColorGreen>
+                        Conheça Nossos Serviços
+                    </Button>
                     <Button colorGreen>Faça Seu Orçamento!</Button>
                     <span>Acompanhe-nos nas redes sociais!</span>
                     <div>
