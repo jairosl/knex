@@ -41,7 +41,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <Button>
-                    <Link href="/ContactUs" >Faça seu orçamento!</Link>
+                    <Link href="/ContactUs">Faça seu orçamento!</Link>
                 </Button>
             </NavContainer>
         </Nav>
