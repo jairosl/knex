@@ -66,7 +66,7 @@ export default function Home() {
                     </Link> */}
                     </div>
                 </Content>
-                <Content>
+                <Content hidden>
                     <Image
                         src="/assets/images/femaleWorking.svg"
                         alt="avatar"

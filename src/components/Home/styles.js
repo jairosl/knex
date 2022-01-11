@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    width: 100%;
     height: 100vh;
     display: flex;
     background-image: url('/assets/images/tela.png');
     align-items: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 600px) {
+        width: 100vw;
+        justify-content: center;
+    }
 `;
 
 export const Content = styled.div`
+    display: block;
     width: 500px;
     padding: 0 1rem;
     p,
@@ -39,6 +44,34 @@ export const Content = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        display: ${({ hidden }) => (hidden ? 'none' : 'block')};
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+
+        button {
+            margin-bottom: 1rem;
+        }
+
+        div {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        button {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+        > span {
+            margin: 1.5rem 0 0.2rem 0;
+        }
+    }
 `;
 
 export const Title = styled.h2`
@@ -47,6 +80,15 @@ export const Title = styled.h2`
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 72px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+        line-height: 52px;
+    }
+    @media screen and (max-width: 770px) {
+        font-size: 3rem;
+        line-height: 60px;
+    }
 `;
 
 export const Button = styled.button`
