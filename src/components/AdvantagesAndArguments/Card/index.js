@@ -1,5 +1,23 @@
 import React from 'react';
 
-export function Card() {
-    return <h2>Advantage And Argument Card</h2>;
+import Image from 'next/image';
+
+import { CardContainer, CardContent } from './styles.js';
+
+export function Card({ imageUrl, title, text }) {
+    return (
+        <CardContainer>
+            <CardContent>
+                <Image
+                    src={imageUrl}
+                    alt={title}
+                    width={399}
+                    height={242}
+                    onDragStart={(e) => e.preventDefault()}
+                />
+                <h1>{title}</h1>
+                <p>{text}</p>
+            </CardContent>
+        </CardContainer>
+    );
 }
