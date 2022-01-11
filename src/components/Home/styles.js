@@ -60,7 +60,7 @@ export const Content = styled.div`
         }
     }
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 910px) {
         button {
             margin-bottom: 1rem;
         }
@@ -83,11 +83,11 @@ export const Title = styled.h2`
 
     @media screen and (max-width: 600px) {
         font-size: 2.5rem;
-        line-height: 52px;
+        line-height: 50px;
     }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 910px) {
         font-size: 3rem;
-        line-height: 60px;
+        line-height: 56px;
     }
 `;
 
