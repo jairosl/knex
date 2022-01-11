@@ -4,7 +4,6 @@ export const AdvantagesAndArgumentsContainer = styled.section`
     min-height: 930px;
     background: var(--white);
     padding: 2rem;
-    color: red;
 `;
 
 export const AdvantagesAndArgumentsContent = styled.div`
