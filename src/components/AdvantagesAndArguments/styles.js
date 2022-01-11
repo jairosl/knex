@@ -24,12 +24,14 @@ export const AdvantagesAndArgumentsContent = styled.div`
 `;
 
 export const TextBox = styled.div`
-    width: 1279px;
-    margin: 0 auto;
+    margin-left: 6.75rem;
 
-    @media (max-width: 1279px) {
-        width: auto;
-        max-width: 1279px;
+    @media (max-width: 1080px) {
+        margin-left: 5rem;
+    }
+
+    @media (max-width: 720px) {
+        margin-left: 0;
     }
 `;
 
@@ -67,7 +69,7 @@ export const ArrowButton = styled.button`
     margin-top: 5rem;
 
     @media (max-width: 720px) {
-        margin: 5rem 0 0 0;
+        margin: 5.5rem 0 0 0;
         width: 29px;
         height: 54px;
     }
