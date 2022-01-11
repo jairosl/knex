@@ -15,8 +15,8 @@ import {
 
 const carouselBreakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 820, itemsToShow: 2 },
-    { width: 1279, itemsToShow: 3 }
+    { width: 720, itemsToShow: 2 },
+    { width: 1180, itemsToShow: 3 }
 ];
 //só pra simular o map
 const data = [
@@ -75,7 +75,7 @@ function AdvantagesAndArguments() {
                 <Carousel
                     breakPoints={carouselBreakPoints}
                     pagination={false}
-                    itemPadding={[0, 28]}
+                    itemPadding={[0, 16]}
                     renderArrow={({ type, onClick, isEdge }) =>
                         type === 'PREV'
                             ? customCarouselArrow(onClick, isEdge)

@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 export const AdvantagesAndArgumentsContainer = styled.section`
     min-height: 930px;
     background: var(--white);
+    padding: 2rem;
+    color: red;
 `;
 
 export const AdvantagesAndArgumentsContent = styled.div`
@@ -63,7 +65,19 @@ export const ArrowButton = styled.button`
     color: var(--black);
     padding: 0;
     margin-right: 30px;
-    margin-top: 80px;
+    margin-top: 5rem;
+
+    @media (max-width: 720px) {
+        margin: 5rem 0 0 0;
+        width: 29px;
+        height: 54px;
+    }
+
+    @media (max-width: 550px) {
+        margin: 4rem 0 0 0;
+        width: 29px;
+        height: 54px;
+    }
 
     ${(props) =>
         props.isRight &&
@@ -87,6 +101,7 @@ export const ArrowButton = styled.button`
     }
 
     &:disabled {
-        visibility: hidden;
+        filter: contrast(0%);
+        cursor: not-allowed;
     }
 `;
