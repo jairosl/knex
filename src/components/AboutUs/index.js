@@ -23,18 +23,18 @@ const AboutUS = () => {
                         height={60}
                     />
                     <h3>Alta Qualidade</h3>
-                    <p>Temos um rigoroso processo seletivo que seleciona os melhores estudantes da univeridade, que tambem recebem 
-                    treinamentos intersivos e palestar contates para aprimorarem ainda mais os seus conhecimentos.</p>
+                    <p>Temos um rigoroso processo seletivo que seleciona os melhores estudantes da universidade, que também recebem 
+                    treinamentos intensivos e palestras constantes para aprimorarem ainda mais os seus conhecimentos.</p>
                 </div>
                 <div>
                     <Image
-                        src="/assets/images/iconArrowUp.svg"
-                        alt="icon Seta pra cima"
-                        width={60}
-                        height={60}
+                        src="/assets/images/iconDollarSign.svg"
+                        alt="icon cifrao"
+                        width={42}
+                        height={50}
                     />
                     <h3>Custo beneficio</h3>
-                    <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 50% mais barato que o mercado. Bem legal, não é?</p>
+                    <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 60% mais barato que o mercado. Bem legal, não é?</p>
                 </div>
                 </SubText>  
             </LeftCol>

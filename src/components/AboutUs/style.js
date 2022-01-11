@@ -22,7 +22,11 @@ export const MainText = styled.div`
 export const SubText = styled.div`
     width: 800px;
     display:flex;
-    
+
+    h3{
+        margin-block: 0;
+    }
+
     p{
         color: #5B5B5B;
         width: 340px;
@@ -34,7 +38,6 @@ export const SubText = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        
     }
     
 `
