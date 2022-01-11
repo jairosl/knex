@@ -22,6 +22,7 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
                         rel="stylesheet"
                     />
+                    <link rel="icon" href="favicon.svg" type="image/svg" />
                     {this.props.styleTags}
                 </Head>
                 <body>
