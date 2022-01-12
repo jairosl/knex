@@ -25,16 +25,15 @@ const AboutUS = () => {
                         />
                         <h3>Alta Qualidade</h3>
                         <p>
-                            Temos um rigoroso processo seletivo que seleciona os melhores estudantes
-                            da universidade, que também recebem treinamentos intensivos e palestras
-                            contantes para aprimorarem ainda mais os seus conhecimentos.
+                            Nosso processo seletivo seleciona os melhores da universidade, recebem
+                            treinamentos intensivos para aprimorarem ainda mais seus conhecimentos.
                         </p>
                     </div>
                     <div>
                         <Image
-                            src="/assets/images/iconArrowUp.svg"
+                            src="/assets/images/dollarIcon.svg"
                             alt="icon of an Arrow Up"
-                            width={60}
+                            width={35}
                             height={60}
                         />
                         <h3>Custo benefício</h3>

@@ -1,16 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 import Header from '../Header';
+import Head from 'next/head';
 
 import { Wrapper, Content, Title, Button } from './styles.js';
 
 export default function Home() {
     return (
         <>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <title>Knex</title>
+            </Head>
+
             <Header />
-            <Wrapper>
+            <Wrapper id="home">
                 <Content>
                     <Title>Atualize seu negócio</Title>
                     <p>
@@ -18,8 +23,14 @@ export default function Home() {
                         alavancar de vendas e ainda com baixo preço!
                     </p>
 
-                    <Button bg>Conheça Nossos Serviços</Button>
-                    <Button colorGreen>Faça Seu Orçamento!</Button>
+                    <Button bg greenBorder fontColorGreen>
+                        Conheça Nossos Serviços
+                    </Button>
+
+                    <Button colorGreen>
+                        <Link href="/ContactUs">Faça Seu Orçamento!</Link>
+                    </Button>
+
                     <span>Acompanhe-nos nas redes sociais!</span>
                     <div>
                         <Image
@@ -59,7 +70,7 @@ export default function Home() {
                     </Link> */}
                     </div>
                 </Content>
-                <Content>
+                <Content hidden>
                     <Image
                         src="/assets/images/femaleWorking.svg"
                         alt="avatar"

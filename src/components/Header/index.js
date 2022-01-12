@@ -17,7 +17,7 @@ export default function Header() {
             </Hamburger>
             <NavContainer isOpen={isOpen}>
                 <div>
-                    <Link href="/" passHref>
+                    <Link href="/#home" passHref>
                         <StyledLink>Início</StyledLink>
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div>
-                    <Link href="#about" passHref>
+                    <Link href="/#about" passHref>
                         <StyledLink>Quem somos?</StyledLink>
                     </Link>
                 </div>
@@ -46,7 +46,9 @@ export default function Header() {
                         <StyledLink>MEJ</StyledLink>
                     </Link>
                 </div>
-                <Button>Faça seu orçamento!</Button>
+                <Button>
+                    <Link href="/ContactUs">Faça seu orçamento!</Link>
+                </Button>
             </NavContainer>
         </HeaderContainer>
     );
