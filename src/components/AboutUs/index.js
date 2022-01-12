@@ -16,36 +16,31 @@ const AboutUS = () => {
                 </MainText>
                 <br></br>
                 <SubText>
-                    <div>
-                        <Image
-                            src="/assets/images/iconArrowUp.svg"
-                            alt="icon of an Arrow Up"
-                            width={60}
-                            height={60}
-                        />
-                        <h3>Alta Qualidade</h3>
-                        <p>
-                            Nosso processo seletivo seleciona os melhores da universidade, recebem
-                            treinamentos intensivos para aprimorarem ainda mais seus conhecimentos.
-                        </p>
-                    </div>
-                    <div>
-                        <Image
-                            src="/assets/images/dollarIcon.svg"
-                            alt="icon of an Arrow Up"
-                            width={35}
-                            height={60}
-                        />
-                        <h3>Custo benefício</h3>
-                        <p>
-                            Como somos uma empresa sem fins lucrativos, cobramos preços até 60% mais
-                            barato que o mercado. Bem legal, não é?
-                        </p>
-                    </div>
-                </SubText>
-            </div>
-            <div>
-                <Image
+                <div>
+                    <Image
+                        src="/assets/images/iconArrowUp.svg"
+                        alt="icon Seta pra cima"
+                        width={60}
+                        height={60}
+                    />
+                    <h3>Alta Qualidade</h3>
+                    <p>Temos um rigoroso processo seletivo que seleciona os melhores estudantes da universidade, que também recebem 
+                    treinamentos intensivos e palestras constantes para aprimorarem ainda mais os seus conhecimentos.</p>
+                </div>
+                <div>
+                    <Image
+                        src="/assets/images/iconDollarSign.svg"
+                        alt="icon cifrao"
+                        width={42}
+                        height={50}
+                    />
+                    <h3>Custo beneficio</h3>
+                    <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 60% mais barato que o mercado. Bem legal, não é?</p>
+                </div>
+                </SubText>  
+            </LeftCol>
+            <RightCol>
+            <Image
                     src="/assets/images/groupMeeting.svg"
                     alt="group meeting"
                     width={400}
