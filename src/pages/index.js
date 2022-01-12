@@ -11,8 +11,8 @@ export default function Home() {
     return (
         <>
             <Main />
-            <Services />
             <AdvantagesAndArguments />
+            <Services />
             <AboutUS />
             <ContactUs />
             <Footer />
