@@ -28,6 +28,10 @@ export const SubText = styled.div`
         margin-right: 1rem;
     }
 
+    h3{
+        margin-block: 0;
+    }
+
     p {
         color: #5b5b5b;
         width: 340px;
