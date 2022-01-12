@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     width: 100%;
-    padding: 0 2rem;
     background-color: var(--black);
     position: fixed;
     z-index: 1000;
@@ -12,6 +11,10 @@ export const HeaderContainer = styled.header`
     flex-wrap: wrap;
 
     border-bottom: 0.5px solid rgba(219, 218, 255, 0.6);
+
+    @media (max-width: 1024px) {
+        justify-content: space-around;
+    }
 `;
 
 export const NavContainer = styled.nav`
