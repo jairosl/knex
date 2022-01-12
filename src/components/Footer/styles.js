@@ -2,10 +2,32 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.section`
     background: #0d0c17;
+    display: flex;
+
+    &::before {
+        content: '';
+        width: 53px;
+        height: 144px;
+        border-radius: 0 30px 0 0;
+        background: var(--dark-purple);
+        float: left;
+        align-self: flex-end;
+    }
+
+    &::after {
+        content: '';
+        width: 53px;
+        height: 287px;
+        border-radius: 30px 0 0 30px;
+        background: var(--dark-purple);
+        float: left;
+        align-self: flex-start;
+        margin-top: 2rem;
+    }
 `;
 
 export const FooterContent = styled.div`
-    max-width: 1300px;
+    width: 1300px;
     padding: 5rem 2rem;
 
     margin: 0 auto;
