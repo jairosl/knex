@@ -10,8 +10,8 @@ import { Cards, Container, Header } from './styles';
 
 function Services() {
     return (
-        <Container>
-            <Header>
+        <Container id="containerMain">
+            <Header id="headerMain">
                 <h2>Conheça os melhores serviços para a sua empresa!</h2>
                 <p>
                     Desenvolver soluções com foco em tecnologias de qualidade, segurança e
@@ -19,7 +19,7 @@ function Services() {
                     software e manutenção.
                 </p>
             </Header>
-            <Cards>
+            <Cards id="cardsMain">
                 <ServicesCard
                     title="Desenvolvimento de Websites"
                     description="Com as melhores técnologias, conseguimos manter seu negócio de maneira digital para que possa atingir mais pessoas e independentemente do lugar."
