@@ -22,14 +22,14 @@ export const MainText = styled.div`
 `;
 export const SubText = styled.div`
     width: 800px;
-    display:flex;
+    display: flex;
 
-    h3{
-        margin-block: 0;
+    div:first-child {
+        margin-right: 1rem;
     }
 
-    p{
-        color: #5B5B5B;
+    p {
+        color: #5b5b5b;
         width: 340px;
     }
 
