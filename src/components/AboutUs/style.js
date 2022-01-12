@@ -22,7 +22,7 @@ export const MainText = styled.div`
 `;
 export const SubText = styled.div`
     width: 800px;
-    display:flex;
+    display: flex;
 
     div:first-child {
         margin-right: 1rem;
@@ -32,8 +32,8 @@ export const SubText = styled.div`
         margin-block: 0;
     }
 
-    p{
-        color: #5B5B5B;
+    p {
+        color: #5b5b5b;
         width: 340px;
     }
 
