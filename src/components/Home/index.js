@@ -26,7 +26,11 @@ export default function Home() {
                     <Button bg greenBorder fontColorGreen>
                         Conheça Nossos Serviços
                     </Button>
-                    <Button colorGreen>Faça Seu Orçamento!</Button>
+
+                    <Button colorGreen>
+                        <Link href="/ContactUs">Faça Seu Orçamento!</Link>
+                    </Button>
+
                     <span>Acompanhe-nos nas redes sociais!</span>
                     <div>
                         <Image
@@ -66,7 +70,7 @@ export default function Home() {
                     </Link> */}
                     </div>
                 </Content>
-                <Content>
+                <Content hidden>
                     <Image
                         src="/assets/images/femaleWorking.svg"
                         alt="avatar"

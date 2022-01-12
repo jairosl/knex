@@ -35,13 +35,13 @@ const GlobalStyle = createGlobalStyle`
     --white: #ffffff;
   }
 
-  @media (max-width: 1080) {
+  @media (max-width: 1080px) {
     html {
       font-size: 93.75%;
     }
   }
 
-  @media (max-width: 728) {
+  @media (max-width: 728px) {
     html {
       font-size: 87.5%;
     }
