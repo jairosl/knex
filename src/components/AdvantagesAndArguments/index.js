@@ -15,8 +15,8 @@ import {
 
 const carouselBreakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 820, itemsToShow: 2 },
-    { width: 1279, itemsToShow: 3 }
+    { width: 720, itemsToShow: 2 },
+    { width: 1180, itemsToShow: 3 }
 ];
 //só pra simular o map
 const data = [
@@ -28,27 +28,15 @@ const data = [
     },
     {
         id: 2,
-        imageUrl: '/assets/images/manAndWoman.webp',
-        title: 'Fortaleça sua marca',
-        text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
+        imageUrl: '/assets/images/workTeam.webp',
+        title: 'Seu negócio aberto 24h',
+        text: 'Quanto custaria para o seu negócio se manter aberto 24h a fim de atender todos que precisassem do seu produto ou serviço ou até mesmo de uma informação? Com um site isso é possível!'
     },
     {
         id: 3,
-        imageUrl: '/assets/images/manAndWoman.webp',
-        title: 'Fortaleça sua marca',
-        text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
-    },
-    {
-        id: 4,
-        imageUrl: '/assets/images/manAndWoman.webp',
-        title: 'Fortaleça sua marca',
-        text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
-    },
-    {
-        id: 5,
-        imageUrl: '/assets/images/manAndWoman.webp',
-        title: 'Fortaleça sua marca',
-        text: 'Hoje é fundamental estar presente no ambiente digital. Garanta uma forte presença online! Se você não é visto, não é lembrado, não é falado, nem divulgado...'
+        imageUrl: '/assets/images/childAndMom.webp',
+        title: 'Aumente o seu alcance',
+        text: 'Com um site, aliado as ferramentas de SEO que utilizamos em nossos produdos. O seu negócio irá aparecer em pesquisas na internet, alcançando um mundo de possibilidades.'
     }
 ];
 
@@ -75,7 +63,7 @@ function AdvantagesAndArguments() {
                 <Carousel
                     breakPoints={carouselBreakPoints}
                     pagination={false}
-                    itemPadding={[0, 28]}
+                    itemPadding={[0, 16]}
                     renderArrow={({ type, onClick, isEdge }) =>
                         type === 'PREV'
                             ? customCarouselArrow(onClick, isEdge)
