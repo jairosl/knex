@@ -24,6 +24,10 @@ export const SubText = styled.div`
     width: 800px;
     display:flex;
 
+    div:first-child {
+        margin-right: 1rem;
+    }
+
     h3{
         margin-block: 0;
     }

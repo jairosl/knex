@@ -31,15 +31,15 @@ const AboutUS = () => {
                     <Image
                         src="/assets/images/iconDollarSign.svg"
                         alt="icon cifrao"
-                        width={42}
-                        height={50}
+                        width={35}
+                        height={60}
                     />
                     <h3>Custo beneficio</h3>
                     <p>Como somos uma empresa sem fins lucrativos, cobramos preços até 60% mais barato que o mercado. Bem legal, não é?</p>
                 </div>
                 </SubText>  
-            </LeftCol>
-            <RightCol>
+            </div>
+            <div>
             <Image
                     src="/assets/images/groupMeeting.svg"
                     alt="group meeting"
