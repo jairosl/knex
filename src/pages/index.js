@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import AdvantagesAndArguments from '../components/AdvantagesAndArguments';
 import AboutUS from '../components/AboutUs';
 import ContactUs from '../components/ContactUs';
+import { Mej } from '../components/Mej';
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <AdvantagesAndArguments />
             <AboutUS />
             <ContactUs />
+            <Mej />
         </>
     );
 }
