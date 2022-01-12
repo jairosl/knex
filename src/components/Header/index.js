@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Nav, NavContainer, StyledLink, Logo, Button } from './styles';
+import { HeaderContainer, NavContainer, StyledLink, Logo, Button, Hamburger } from './styles';
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <Nav>
+        <HeaderContainer>
             <Logo>
                 <Image src="/assets/images/knex-logo.svg" layout="fill" />
             </Logo>
-            <NavContainer>
+            <Hamburger onClick={() => setIsOpen(!isOpen)}>
+                <span />
+                <span />
+                <span />
+            </Hamburger>
+            <NavContainer isOpen={isOpen}>
                 <div>
                     <Link href="/" passHref>
                         <StyledLink>Início</StyledLink>
@@ -42,6 +48,6 @@ export default function Header() {
                 </div>
                 <Button>Faça seu orçamento!</Button>
             </NavContainer>
-        </Nav>
+        </HeaderContainer>
     );
 }
