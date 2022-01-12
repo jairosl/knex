@@ -49,7 +49,7 @@ export const Content = styled.div`
         display: ${({ hidden }) => (hidden ? 'none' : 'block')};
         text-align: center;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 3rem;
 
         button {
             margin-bottom: 1rem;
@@ -60,10 +60,8 @@ export const Content = styled.div`
         }
     }
 
-    @media screen and (max-width: 910px) {
-        button {
-            margin-bottom: 1rem;
-        }
+    @media screen and (max-width: 1024px) {
+        display: ${({ hidden }) => (hidden ? 'none' : 'block')};
 
         p {
             margin-bottom: 1.5rem;
