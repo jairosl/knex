@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
@@ -6,19 +6,20 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: .9em;
-`
-export const LeftCol = styled.div`
-    
-`
+    font-size: 0.9em;
+`;
+
 export const MainText = styled.div`
-    width: 700px ;
-    p{
-        color: #5B5B5B;
-        width: 400px ;
+    width: 700px;
+    h1 {
+        font-size: 48px;
+        margin: 0;
     }
-        
-`
+    p {
+        color: #5b5b5b;
+        width: 400px;
+    }
+`;
 export const SubText = styled.div`
     width: 800px;
     display:flex;
@@ -30,15 +31,12 @@ export const SubText = styled.div`
     p{
         color: #5B5B5B;
         width: 340px;
-        
     }
 
-    div{
+    div {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    
-`
-export const RightCol = styled.div``
+`;

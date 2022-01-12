@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import { LeftCol, RightCol, Container, MainText, SubText } from './style';
+import { Container, MainText, SubText } from './style';
 
 const AboutUS = () => {
     return (
-        <Container>
-            <LeftCol>
+        <Container id="about">
+            <div>
                 <MainText>
-                <h1>Quem somos nós?</h1>
-                <p>
-                Somos uma empresa formada por estudantes dedicados com experiencia no mercado de trabalho e que vai ter retornar o melhor projeto
-                para sua empresa.
-                </p>
-                </MainText> 
-                <br></br> 
+                    <h1>Quem somos nós?</h1>
+                    <p>
+                        Somos uma empresa formada por estudantes dedicados com experiência no
+                        mercado de trabalho e que vai te retornar o melhor projeto para a sua
+                        empresa.
+                    </p>
+                </MainText>
+                <br></br>
                 <SubText>
                 <div>
                     <Image
@@ -41,13 +42,13 @@ const AboutUS = () => {
             <RightCol>
             <Image
                     src="/assets/images/groupMeeting.svg"
-                    alt="avatar"
+                    alt="group meeting"
                     width={400}
                     height={400}
                 />
-            </RightCol>
+            </div>
         </Container>
-    )
-}
+    );
+};
 
 export default AboutUS;
