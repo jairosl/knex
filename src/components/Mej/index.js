@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function Mej() {
     return (
-        <Wrapper>
+        <Wrapper id="mej">
             <div>
                 <Title>Sobre O MEJ</Title>
                 <p>

@@ -18,32 +18,34 @@ export default function Header() {
             <NavContainer isOpen={isOpen}>
                 <div>
                     <Link href="/#home" passHref>
-                        <StyledLink>Início</StyledLink>
+                        <StyledLink onClick={() => setIsOpen(false)}>Início</StyledLink>
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" passHref>
-                        <StyledLink>Porque ter um Site?</StyledLink>
+                    <Link href="/#advantages" passHref>
+                        <StyledLink onClick={() => setIsOpen(false)}>
+                            Porque ter um Site?
+                        </StyledLink>
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" passHref>
-                        <StyledLink>Serviços</StyledLink>
+                    <Link href="/#services" passHref>
+                        <StyledLink onClick={() => setIsOpen(false)}>Serviços</StyledLink>
                     </Link>
                 </div>
                 <div>
                     <Link href="/#about" passHref>
-                        <StyledLink>Quem somos?</StyledLink>
+                        <StyledLink onClick={() => setIsOpen(false)}>Quem somos?</StyledLink>
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" passHref>
-                        <StyledLink>Membros</StyledLink>
+                    <Link href="/#members" passHref>
+                        <StyledLink onClick={() => setIsOpen(false)}>Membros</StyledLink>
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" passHref>
-                        <StyledLink>MEJ</StyledLink>
+                    <Link href="/#mej" passHref>
+                        <StyledLink onClick={() => setIsOpen(false)}>MEJ</StyledLink>
                     </Link>
                 </div>
                 <Button>
