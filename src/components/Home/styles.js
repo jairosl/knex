@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     display: block;
     width: 500px;
+    margin-top: 4rem;
     padding: 0 1rem;
     p,
     span {
