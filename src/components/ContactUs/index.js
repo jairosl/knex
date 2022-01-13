@@ -7,7 +7,7 @@ export default function ContactUs() {
     return (
         <ContactUsContainer>
             <ContactUsContent>
-                <Image src="/assets/images/call.webp" alt="Call" width={963} height={518} />
+                <Image src="/assets/images/call.webp" alt="Call" width={963} height={400} />
                 <LikeText>
                     <h1>Gostou da Knex? Então entre em contato conosco e faça seu site!</h1>
                 </LikeText>

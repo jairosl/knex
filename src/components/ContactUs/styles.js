@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContactUsContainer = styled.section`
-    min-height: 518px;
     background: var(--light-purple);
 `;
 

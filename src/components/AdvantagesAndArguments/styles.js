@@ -3,14 +3,13 @@ import styled, { css } from 'styled-components';
 export const AdvantagesAndArgumentsContainer = styled.section`
     min-height: 930px;
     background: var(--white);
-    padding: 2rem;
 `;
 
 export const AdvantagesAndArgumentsContent = styled.div`
     max-width: 1504px;
     min-height: 930px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
