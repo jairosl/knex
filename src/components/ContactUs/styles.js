@@ -6,13 +6,15 @@ export const ContactUsContainer = styled.section`
 
 export const ContactUsContent = styled.div`
     background: var(--purple-500);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 
     img {
         object-fit: cover;
     }
 
-    @media (max-width: 1634px) {
+    @media (max-width: 1080px) {
+        display: flex;
         flex-direction: column-reverse;
     }
 `;
