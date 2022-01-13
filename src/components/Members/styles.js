@@ -18,7 +18,17 @@ export const MembersContent = styled.section`
 
     h1 {
         font-size: 3rem;
-        margin: 0;
+        font-weight: 500;
+        color: var(--white);
+        margin: 0 0 2rem;
+        margin-left: 6.75rem;
+        @media (max-width: 1080px) {
+            margin-left: 5rem;
+        }
+
+        @media (max-width: 720px) {
+            margin-left: 0;
+        }
     }
 `;
 
