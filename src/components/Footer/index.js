@@ -30,22 +30,27 @@ export default function Footer() {
                         </h1>
 
                         <span>
-                            <span>
-                                <Image
-                                    src="/assets/images/whiteFacebookIcon.svg"
-                                    alt="facebook"
-                                    width={17}
-                                    height={17}
-                                />
-                            </span>
-                            <span>
-                                <Image
-                                    src="/assets/images/whiteInstagramIcon.svg"
-                                    alt="facebook"
-                                    width={17}
-                                    height={17}
-                                />
-                            </span>
+                            <Link href="/">
+                                <a>
+                                    <Image
+                                        src="/assets/images/whiteFacebookIcon.svg"
+                                        alt="facebook"
+                                        width={17}
+                                        height={17}
+                                    />
+                                </a>
+                            </Link>
+
+                            <Link href="https://www.instagram.com/knexjr/">
+                                <a>
+                                    <Image
+                                        src="/assets/images/whiteInstagranIcon.svg"
+                                        alt="Instagram"
+                                        width={17}
+                                        height={17}
+                                    />
+                                </a>
+                            </Link>
                         </span>
                     </DomainColumn>
 

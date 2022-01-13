@@ -92,7 +92,7 @@ export const LegalInformation = styled.div`
 
 export const DomainColumn = styled.div`
     span {
-        span + span {
+        a + a {
             margin-left: 1rem;
         }
     }
