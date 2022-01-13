@@ -32,7 +32,7 @@ const AboutUS = () => {
                     <div>
                         <Image
                             src="/assets/images/dollarIcon.svg"
-                            alt="icon of an Arrow Up"
+                            alt="icon cifrao"
                             width={35}
                             height={60}
                         />
