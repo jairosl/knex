@@ -9,7 +9,7 @@ export const FooterContainer = styled.section`
         width: 53px;
         height: 144px;
         border-radius: 0 30px 0 0;
-        background: var(--dark-purple);
+        background: var(--light-purple);
         float: left;
         align-self: flex-end;
     }
@@ -19,7 +19,7 @@ export const FooterContainer = styled.section`
         width: 53px;
         height: 287px;
         border-radius: 30px 0 0 30px;
-        background: var(--dark-purple);
+        background: var(--light-purple);
         float: left;
         align-self: flex-start;
         margin-top: 2rem;
