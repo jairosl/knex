@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import { Container, MainText, SubText } from './style';
+import { Container, MainText, SubText, LeftCol , RightCol } from './style';
 
 const AboutUS = () => {
     return (
         <Container id="about">
-            <div>
+            <LeftCol>
                 <MainText>
                     <h1>Quem somos nós?</h1>
                     <p>
@@ -43,15 +43,15 @@ const AboutUS = () => {
                         </p>
                     </div>
                 </SubText>
-            </div>
-            <div>
+            </LeftCol>
+            <RightCol>
                 <Image
                     src="/assets/images/groupMeeting.svg"
                     alt="group meeting"
                     width={400}
                     height={400}
                 />
-            </div>
+            </RightCol>
         </Container>
     );
 };
