@@ -24,7 +24,7 @@ export default function Members() {
     return (
         <MembersContainer id="members">
             <MembersContent>
-                <h1>Members</h1>
+                <h1>Membros</h1>
 
                 <Carousel
                     breakPoints={carouselBreakPoints}
