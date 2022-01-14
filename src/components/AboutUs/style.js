@@ -8,8 +8,8 @@ export const Container = styled.div`
     font-weight: 600;
     font-size: 0.9em;
 
-    @media screen and (max-width: 400px) {
-        padding-bottom: 3rem;
+    @media screen and (min-width: 1280px) {
+        padding: 6rem 5rem 6rem 2rem;
     }
 `;
 
@@ -108,7 +108,7 @@ export const SubText = styled.div`
 
 export const RightCol = styled.div`
     width: 33%;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1280px) {
         display: none;
     }
 `;
