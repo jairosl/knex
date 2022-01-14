@@ -7,7 +7,7 @@ import { Container, TextArea } from './styles';
 export function ServicesCard(props) {
     return (
         <Container>
-            <Image src={props.imgPath} alt={props.imgAlternative} className="icon" id="iconCard" />
+            <Image src={props.imgPath} alt={props.imgAlternative} className="icon" />
             <TextArea id="textArea">
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>

@@ -5,25 +5,51 @@ export const Container = styled.div`
     background: #8075ff;
     width: 100%;
 
-    @media (max-width: 320px) {
+    @media (max-width: 1180px) {
         #headerMain {
-            margin: 0 auto;
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                width: 54%;
+                height: auto;
+                font-size: 2.4rem;
+                margin-bottom: 3rem;
+                text-align: left;
+            }
+
             p {
-                margin-top: 15%;
+                width: 54%;
+                height: auto;
+                margin: 0;
+                font-size: 1.1rem;
+                text-align: left;
             }
         }
+
+        #cardsMain {
+            align-items: center;
+            flex-direction: column;
+        }
     }
+
     @media (max-width: 770px) {
         width: 100%;
         #headerMain {
             padding: 10%;
-            text-align: center;
+            padding-bottom: 0;
+            text-align: left;
             h2 {
+                width: 70%;
                 margin: 0;
+                margin-bottom: 40px;
+                font-size: 3rem;
+                line-height: 3.25rem;
             }
             p {
-                text-align: center;
+                width: 70%;
+                font-size: 1.5rem;
+                text-align: justify;
             }
         }
         #cardsMain {
@@ -37,10 +63,28 @@ export const Container = styled.div`
         }
     }
 
-    @media (max-width: 1180px) {
+    @media (max-width: 650px) {
+        #headerMain {
+            width: 80%;
+
+            h2 {
+                width: 83%;
+            }
+
+            p {
+                width: 83%;
+            }
+        }
+
         #cardsMain {
-            align-items: center;
-            flex-direction: column;
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        #headerMain {
+            margin: 0 auto;
+            text-align: left;
         }
     }
 `;
@@ -49,16 +93,22 @@ export const Header = styled.section`
     color: white;
     width: 70%;
     margin: 0 auto;
-    padding: 3rem;
+    padding-top: 3rem;
     display: flex;
+    justify-content: space-between;
 
     h2 {
+        width: 40%;
         font-size: 2rem;
         font-weight: 500;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 8%;
         line-height: 2.5rem;
+    }
+
+    p {
+        width: 35%;
+        text-align: justify;
     }
 `;
 
@@ -66,7 +116,7 @@ export const Cards = styled.div`
     width: 70%;
     margin: 0 auto;
     display: flex;
-    align-items: center
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: space-between;
