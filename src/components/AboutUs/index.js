@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Container, MainText, SubText, LeftCol , RightCol } from './style';
+import { Container, MainText, SubText, LeftCol, RightCol } from './style';
 
 const AboutUS = () => {
     return (

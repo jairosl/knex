@@ -7,17 +7,23 @@ export const Container = styled.div`
 
     @media (max-width: 1180px) {
         #headerMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             h2 {
-                width: 50%;
+                width: 54%;
                 height: auto;
                 font-size: 2.4rem;
+                margin-bottom: 3rem;
+                text-align: left;
             }
 
             p {
-                width: 45%;
+                width: 54%;
                 height: auto;
                 margin: 0;
                 font-size: 1.1rem;
+                text-align: left;
             }
         }
 
@@ -32,7 +38,7 @@ export const Container = styled.div`
         #headerMain {
             padding: 10%;
             padding-bottom: 0;
-            text-align: center;
+            text-align: left;
             h2 {
                 width: 70%;
                 margin: 0;
@@ -41,9 +47,9 @@ export const Container = styled.div`
                 line-height: 3.25rem;
             }
             p {
-                width: 65%;
+                width: 70%;
                 font-size: 1.5rem;
-                text-align: center;
+                text-align: justify;
             }
         }
         #cardsMain {
@@ -62,11 +68,11 @@ export const Container = styled.div`
             width: 80%;
 
             h2 {
-                width: 100%;
+                width: 83%;
             }
 
             p {
-                width: 90%;
+                width: 83%;
             }
         }
 
