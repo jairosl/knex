@@ -4,20 +4,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { MemberContainer, CardContent, MemberImg } from './styles.js';
-export function Card() {
+export function Card({ name, job, image, linkedin }) {
     return (
         <MemberContainer>
             <CardContent>
                 <MemberImg>
                     <Image
-                        src="/assets/images/manAndWoman.webp"
+                        src={image}
                         alt="member photo"
                         height={300}
                         width={300}
+                        quality={100}
+                        onDragStart={(e) => e.preventDefault()}
                     />
                 </MemberImg>
-                <h1>Márcio Filho</h1>
-                <h2>Diretor de Projetos</h2>
+                <h1>{name}</h1>
+                <h2>{job}</h2>
 
                 <span>
                     <Image
@@ -26,8 +28,8 @@ export function Card() {
                         width={31}
                         height={31}
                     />
-                    <Link href="/">
-                        <a>/nomesobrenome</a>
+                    <Link href={`https://www.linkedin.com/in/${linkedin}`}>
+                        <a>{'/' + linkedin}</a>
                     </Link>
                 </span>
             </CardContent>

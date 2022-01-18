@@ -1,34 +1,31 @@
 import styled, { css } from 'styled-components';
 
 export const MembersContainer = styled.section`
-    min-height: 856px;
     background: var(--light-purple);
 `;
 
-export const MembersContent = styled.section`
-    min-height: 856px;
+export const MembersContent = styled.div`
     max-width: 1642px;
 
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 5rem 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+`;
 
-    h1 {
-        font-size: 3rem;
-        font-weight: 500;
-        color: var(--white);
-        margin: 0 0 2rem;
-        margin-left: 6.75rem;
-        @media (max-width: 1080px) {
-            margin-left: 5rem;
-        }
+export const Title = styled.h1`
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0 0 5rem 8rem;
+    @media (max-width: 1080px) {
+        margin-left: 5rem;
+    }
 
-        @media (max-width: 720px) {
-            margin-left: 0;
-        }
+    @media (max-width: 720px) {
+        margin-left: 0;
     }
 `;
 
@@ -41,13 +38,16 @@ export const ArrowButton = styled.button`
     filter: brightness(0) invert(1);
     color: var(--black);
     padding: 0;
+    margin-right: 4rem;
 
     @media (max-width: 720px) {
         width: 29px;
+        margin: 0;
     }
 
     @media (max-width: 550px) {
         width: 29px;
+        margin: 0;
     }
 
     ${(props) =>
@@ -56,6 +56,7 @@ export const ArrowButton = styled.button`
             img {
                 transform: rotate(180deg);
             }
+            margin-left: 4rem;
         `}
 
     img {
