@@ -36,3 +36,18 @@ export const LikeText = styled.div`
         margin-top: 2rem;
     }
 `;
+
+export const Button = styled.button`
+    background-color: var(--light-green);
+    color: var(--black);
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 0.8rem;
+    font-weight: 600;
+    transition: 0.2s;
+
+    &:hover {
+        background: var(--dark-green);
+        color: #111;
+    }
+`;
