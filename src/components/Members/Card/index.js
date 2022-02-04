@@ -3,10 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { MemberContainer, CardContent, MemberImg } from './styles.js';
+import { CardContainer, CardContent, MemberImg } from './styles.js';
 export function Card({ name, job, image, linkedin }) {
     return (
-        <MemberContainer>
+        <CardContainer>
             <CardContent>
                 <MemberImg>
                     <Image
@@ -33,6 +33,6 @@ export function Card({ name, job, image, linkedin }) {
                     </Link>
                 </span>
             </CardContent>
-        </MemberContainer>
+        </CardContainer>
     );
 }

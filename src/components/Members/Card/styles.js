@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MemberContainer = styled.div`
+export const CardContainer = styled.div`
     background: var(--white);
     border-radius: 1.25rem;
     width: 25rem;
@@ -15,6 +15,7 @@ export const CardContent = styled.div`
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    padding: 2rem;
 
     @media (max-width: 720px) {
         padding: 1rem 1.5rem;

@@ -23,7 +23,7 @@ const members = [
     {
         name: 'Márcio',
         memberPhoto:
-            'https://media-exp1.licdn.com/dms/image/C4D03AQHNPZFYiwiZ4g/profile-displayphoto-shrink_200_200/0/1594083138916?e=1648080000&v=beta&t=E53ucq9An16GV5a3gLZGLwKWINJ6Tb7NcfR-YOmdMFo',
+            'https://media-exp1.licdn.com/dms/image/C4D03AQE_jdBx0QbJOA/profile-displayphoto-shrink_100_100/0/1643401706763?e=1649289600&v=beta&t=3nHpFrBXnfzxXVRsQazwmu9fcZ0FRUqSNARmhYkRCMc',
         job: 'Diretor de projetos',
         linkedin: 'marciobwf'
     },
@@ -38,13 +38,13 @@ const members = [
         name: 'Jairo',
         memberPhoto:
             'https://media-exp1.licdn.com/dms/image/C4E03AQGPCvuNhoWkHA/profile-displayphoto-shrink_200_200/0/1632570794654?e=1648080000&v=beta&t=bUCMelbv-N-Xi8AL7LjLF124sdsOEn6jiXA76C2EVcY',
-        job: 'Desenvolvedor',
+        job: 'Diretor de alguma coisa e algo a mais um pouco',
         linkedin: 'jairosl'
     },
     {
         name: 'Natan Cavalcante',
         memberPhoto:
-            'https://media-exp1.licdn.com/dms/image/C5635AQHP7gRKzvBSeA/profile-framedphoto-shrink_200_200/0/1620350234083?e=1642618800&v=beta&t=nEmGN5LtvkxbxAB8vZ9dpSTdF-9cKuFr2fXKh0v-UXw',
+            'https://media-exp1.licdn.com/dms/image/C5635AQHP7gRKzvBSeA/profile-framedphoto-shrink_200_200/0/1620350234083?e=1644087600&v=beta&t=bTaARlXHe7CR6Hsfq3WkRojL3Sd7VpV2XIacdQp1DiA',
         job: 'Adm fin',
         linkedin: 'natan-cavalcante'
     }
