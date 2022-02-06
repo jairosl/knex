@@ -3,8 +3,7 @@ var defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 // Configure API key authorization: api-key
 var apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey =
-    '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';
+apiKey.apiKey = process.env.API_KEY;
 
 export default async (request, response) => {
     var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
