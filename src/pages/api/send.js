@@ -1,38 +1,30 @@
-const nodemailer = require('nodemailer');
+var SibApiV3Sdk = require('sib-api-v3-sdk');
+var defaultClient = SibApiV3Sdk.ApiClient.instance;
 
-export default (request, response) => {
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'knex.org@gmail.com',
-            pass: '9IqJi510uo19'
-        }
-    });
+// Configure API key authorization: api-key
+var apiKey = defaultClient.authentications['api-key'];
+apiKey.apiKey =
+    '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';
 
-    const mailOptions = {
-        from: 'knex.org@gmail.com',
-        to: 'marcio.knex@gmail.com',
-        bcc: 'knex.org@gmail.com; samuel.knex@gmail.com',
-        subject: 'Possivel cliente: teste',
-        html: `
-        <h1> Contato</h1>
-        <p>
-          <strong>Nome: </strong> <br/>
-          <strong>Email: </strong> <br/>
-          <strong>Assunto: </strong> <br/>
-          <strong>Menssagem: </strong> <br/>
-        </p>
-      `
-    };
+export default async (request, response) => {
+    var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
+
+    var sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail(); // SendSmtpEmail | Values to send a transactional email
+
+    sendSmtpEmail.subject = 'My {{params.subject}}';
+    sendSmtpEmail.htmlContent =
+        '<html><body><h1>This is my first transactional email {{params.parameter}}</h1></body></html>';
+    sendSmtpEmail.sender = { name: 'John Doe', email: 'example@example.com' };
+    sendSmtpEmail.to = [{ email: 'jairosoareslima@gmail.com', name: 'Jane Doe' }];
+    sendSmtpEmail.cc = [{ email: 'example2@example2.com', name: 'Janice Doe' }];
+    // sendSmtpEmail.bcc = [{ email: 'John Doe', name: 'jairosoareslima@gamil.com' }];
+    sendSmtpEmail.params = { parameter: 'jairo', subject: 'teste' };
 
     try {
-        const result = transporter.sendMail(mailOptions);
-        if (!result.reject) {
-            response.status(200).json({ message: 'mensagem enviada com sucesso' });
-        } else {
-            response.status(500).json({ message: 'ops... houve um erro' });
-        }
-    } catch (error) {
-        response.status(500).json({ message: error.message });
+        const data = await apiInstance.sendTransacEmail(sendSmtpEmail);
+        response.json({ 'API called successfully. Returned data: ': data });
+    } catch (e) {
+        console.error(e);
+        response.status(400);
     }
 };
