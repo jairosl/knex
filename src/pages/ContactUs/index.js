@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
+import { yupResolver } from '@hookform/resolvers/yup';
+import { LinearProgress } from '@material-ui/core';
+import axios from 'axios';
 import React, { forwardRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import NumberFormat from 'react-number-format';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Input } from '../../Components/Form/input';
+import { InputWithMask } from '../../Components/Form/inputWithMask';
 // eslint-disable-next-line import/no-unresolved
 import Header from '../../components/Header';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { FormBody, FormSection, Button } from './styles';
 import { contactUsValidations } from './FormValidation';
-import NumberFormat from 'react-number-format';
-import { InputWithMask } from '../../Components/Form/inputWithMask';
-import { Input } from '../../Components/Form/input';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Button, FormBody, FormSection } from './styles';
 
 function ContactUs() {
     const [isLoading, setIsLoading] = useState(false);
@@ -104,12 +105,14 @@ function ContactUs() {
             />
             <ToastContainer />
             <Header />
+
             <FormBody onSubmit={handleSubmit(sendDataRequest)}>
                 <div>
                     <h1>
                         Entre em contato conosco para <br />
                         fazer seu orçamento!
                     </h1>
+
                     <p>
                         Preencha os dados no formulário a seguir e entraremos em contato com você.
                     </p>
@@ -120,12 +123,14 @@ function ContactUs() {
                                 variant="outlined"
                                 {...register('name')}
                                 hasError={errors.name}
+                                disabled={isLoading}
                             />
                             <Input
                                 label="Cidade"
                                 variant="outlined"
                                 {...register('city')}
                                 hasError={errors.city}
+                                disabled={isLoading}
                             />
                         </div>
                     </FormSection>
@@ -135,6 +140,7 @@ function ContactUs() {
                             variant="outlined"
                             {...register('email')}
                             hasError={errors.email}
+                            disabled={isLoading}
                         />
                         <InputWithMask
                             label="Telefone"
@@ -142,6 +148,7 @@ function ContactUs() {
                             {...register('phoneNumber')}
                             hasError={errors.phoneNumber}
                             inputMaskComponent={CellPhoneFormatMask}
+                            disabled={isLoading}
                         />
                     </FormSection>
 
@@ -152,6 +159,7 @@ function ContactUs() {
                         {...register('userMessage')}
                         style={{ margin: '10px 0', width: '1085px' }}
                         hasError={errors.userMessage}
+                        disabled={isLoading}
                     />
 
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -160,6 +168,9 @@ function ContactUs() {
                         </Button>
                     </div>
                 </div>
+                {isLoading && (
+                    <LinearProgress variant="query" style={{ width: '99.4vw', height: '10px' }} />
+                )}
             </FormBody>
         </>
     );
