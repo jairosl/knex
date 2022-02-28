@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FormBody = styled.form`
-    width: 100vw;
     padding-top: 80px;
     display: flex;
     flex-direction: column;
@@ -15,6 +14,7 @@ export const FormBody = styled.form`
         font-size: 36px;
         margin: 40px 0 0 0;
         line-height: 45px;
+        margin: 80px 0 0 0;
     }
 
     p {
@@ -25,29 +25,16 @@ export const FormBody = styled.form`
 
 export const FormSection = styled.div`
     width: 100%;
-
-    input:first-child {
-        margin: 0 20px 15px 0;
+    .organizer {
+        margin: 0 10px 10px 0;
     }
-`;
-
-export const Input = styled.input`
-    padding: 5px;
-    height: 40px;
-    width: 500px;
-    background-color: rgba(167, 192, 255, 0.17);
-    border-radius: 8px;
-    border: none;
-    outline: none;
-`;
-export const TextArea = styled.textarea`
-    padding: 5px;
-    width: calc(100% - 10px);
-    height: 200px;
-    background-color: rgba(167, 192, 255, 0.17);
-    border-radius: 8px;
-    border: none;
-    outline: none;
+    div {
+        input {
+            height: 20px;
+            width: 500px;
+        }
+        margin-right: 10px;
+    }
 `;
 
 export const Button = styled.button`
@@ -58,6 +45,7 @@ export const Button = styled.button`
     border: 1px solid var(--light-purple);
     transition: 0.2s;
     height: 40px;
+    margin: 50px 0;
 
     &:hover {
         transition: 0.2s;
