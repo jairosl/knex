@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { RegularExpressions } from '../../utils/RegularExpression';
+import { RegularExpressions } from './RegularExpression';
 
 const { cellPhoneRegExp } = RegularExpressions;
 

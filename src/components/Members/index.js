@@ -76,6 +76,7 @@ export default function Members() {
                 >
                     {members.map((member) => (
                         <Card
+                            key={`${member.name}`}
                             name={member.name}
                             job={member.job}
                             image={member.memberPhoto}
