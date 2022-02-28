@@ -1,18 +1,18 @@
 /* eslint-disable react/prop-types */
+import React, { forwardRef, useState } from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { LinearProgress } from '@material-ui/core';
 import axios from 'axios';
-import React, { forwardRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import NumberFormat from 'react-number-format';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Input } from '../../Components/Form/input';
-import { InputWithMask } from '../../Components/Form/inputWithMask';
+import { Input } from '../../components/Form/input';
+import { InputWithMask } from '../../components/Form/inputWithMask';
 // eslint-disable-next-line import/no-unresolved
 import Header from '../../components/Header';
-import { contactUsValidations } from './FormValidation';
-import { Button, FormBody, FormSection } from './styles';
+import { contactUsValidations } from './_formValidation';
+import { Button, FormBody, FormSection } from './_styles';
 
 function ContactUs() {
     const [isLoading, setIsLoading] = useState(false);
