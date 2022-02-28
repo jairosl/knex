@@ -11,8 +11,8 @@ import { Input } from '../../components/Form/input';
 import { InputWithMask } from '../../components/Form/inputWithMask';
 // eslint-disable-next-line import/no-unresolved
 import Header from '../../components/Header';
-import { contactUsValidations } from './_formValidation';
-import { Button, FormBody, FormSection } from './_styles';
+import { contactUsValidations } from '../../utils/formValidation';
+import { Button, FormBody, FormSection } from '../../styles/stylesContactUS';
 
 function ContactUs() {
     const [isLoading, setIsLoading] = useState(false);
