@@ -21,6 +21,40 @@ export const FormBody = styled.form`
         text-align: left;
         margin: 10px 0;
     }
+
+    .textArea {
+        margin: 10px 0;
+        width: 1085px;
+    }
+
+    @media screen and (max-width: 1125px) {
+        div {
+            .textArea {
+                width: 800px;
+            }
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        div {
+            .textArea {
+                width: 540px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        div {
+            .textArea {
+                width: 225px;
+            }
+        }
+    }
 `;
 
 export const FormSection = styled.div`
@@ -34,6 +68,43 @@ export const FormSection = styled.div`
             width: 500px;
         }
         margin-right: 10px;
+    }
+
+    @media screen and (max-width: 1125px) {
+        .organizer {
+            margin: 10px 0;
+        }
+
+        div {
+            input {
+                width: 350px;
+            }
+            margin-bottom: 5px;
+            margin: 0 7px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        div {
+            input {
+                width: 220px;
+            }
+            margin-bottom: 1px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        text-align: center;
+
+        .organizer {
+            margin: 0;
+        }
+        div {
+            input {
+                width: 200px;
+            }
+            margin-right: 4;
+        }
     }
 `;
 
