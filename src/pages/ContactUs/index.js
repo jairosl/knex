@@ -153,11 +153,11 @@ function ContactUs() {
                     </FormSection>
 
                     <Input
+                        className="textArea"
                         isTextArea
                         label="Deixe uma mensagem..."
                         variant="outlined"
                         {...register('userMessage')}
-                        style={{ margin: '10px 0', width: '1085px' }}
                         hasError={errors.userMessage}
                         disabled={isLoading}
                     />

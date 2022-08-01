@@ -10,7 +10,8 @@ export default function ContactUs() {
             <ContactUsContent>
                 <Image src="/assets/images/call.webp" alt="Call" width={963} height={400} />
                 <LikeText>
-                    <h1>Gostou da Knex? Então entre em contato conosco e faça seu site!</h1>
+                    <h1>Gostou da Knex?</h1>
+                    <h3>Então entre em contato conosco e faça seu site!</h3>
                     <Button>
                         <Link href="/ContactUs">Faça seu orçamento!</Link>
                     </Button>

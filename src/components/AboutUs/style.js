@@ -8,6 +8,8 @@ export const Container = styled.div`
     font-weight: 600;
     font-size: 0.9em;
 
+    margin: 0 5em;
+
     @media screen and (min-width: 1280px) {
         padding: 6rem 5rem 6rem 2rem;
     }

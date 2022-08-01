@@ -25,10 +25,19 @@ export const LikeText = styled.div`
     padding: 2rem;
 
     h1 {
+        margin: 0;
         max-width: 35rem;
-        font-size: 3rem;
+        font-size: 2.6rem;
         font-weight: 600;
         line-height: 3.5rem;
+        color: var(--white);
+    }
+    h3 {
+        margin: 0;
+        max-width: 17rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.5rem;
         color: var(--white);
     }
 
